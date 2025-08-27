@@ -9,3 +9,12 @@
 - [Java](https://www.oracle.com/java/technologies/downloads/)
   - [JDK 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html)
 - IDE ([IntelliJ](https://www.jetbrains.com/pt-br/idea/#), [Eclipse](https://eclipseide.org/), etc.)
+
+## Grafana
+- 1º Adicione o datasource Prometheus (URL: http://prometheus-api-cursos:9090)
+- 2º Adicione o datasource Loki (URL: http://loki-api-cursos:3100)
+- 3º Importar o dashboard (`template/api-cursos-dashboards.json`)
+- 4º Atualize o datasource nas variáveis do dashboard para Prometheus
+- 5º Em algumas versões do Grafana há um bug, então...
+  - Pode ser necessário editar os paineis, clicar na query e clica em outro local da tela (e assim o resultado será exibido)
+  - Recarregar a aplicação e fazer o acesso via navegador
