@@ -1,2 +1,3 @@
-# jaeger-opentelemetry-tracking
-Repositório do curso Rastreamento: fazendo tracing com Jaeger e OpenTelemetry da plataforma Alura.
+# Rastreamento: fazendo tracing com Jaeger e OpenTelemetry
+
+Repositório do curso [**Rastreamento: fazendo tracing com Jaeger e OpenTelemetry**](https://cursos.alura.com.br/course/rastreamento-tracing-jaeger-opentelemetry) da plataforma [Alura](https://cursos.alura.com.br/).
