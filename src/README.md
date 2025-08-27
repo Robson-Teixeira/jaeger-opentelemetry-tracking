@@ -1,6 +1,10 @@
 ## Esquema da aplicação
 ![Esquema da aplicação](img/20250826210801.png)
 
+## Documentação
+- [Jaeger](https://www.jaegertracing.io/)
+- [OpenTelemetry](https://opentelemetry.io/)
+
 ## Instalações
 - [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
 - [WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
