@@ -23,3 +23,8 @@
 - 5º Em algumas versões do Grafana há um bug, então...
   - Pode ser necessário editar os paineis, clicar na query e clica em outro local da tela (e assim o resultado será exibido)
   - Recarregar a aplicação e fazer o acesso via navegador
+
+## Comandos
+- `mvn clean package` realiza o empacotamento do projeto, criando o arquivo JAR ou WAR
+- `java -javaagent:opentelemetry/opentelemetry-javaagent.jar -Dotel.service.name=api-cursos -Dotel.traces.exporter=otlp -Dotel.metrics.exporter=none -Dotel.integration.jdbc.datasource.enabled=true -Dotel.instrumentation.jdbc.datasource.enabled=true -Dotel.exporter.otlp.endpoint=http://localhost:4318 -Dotel.exporter.otlp.protocol=http/protobuf -jar target/*.jar` rodando a aplicação com o agent do OpenTelemetry
+  > Utilizar GitBash caso esteja no Windows.

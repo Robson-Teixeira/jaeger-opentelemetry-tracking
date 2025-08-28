@@ -12,6 +12,8 @@ services:
     image: kdpsc/alura:database-api-cursos
     container_name: database-api-cursos
     restart: unless-stopped
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
     healthcheck:
       test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "root" ]
       timeout: 45s
@@ -89,6 +91,9 @@ services:
     volumes:
       - ./collector/otel-collector-config.yaml:/etc/otel-collector-config.yaml
     command: ["--config=/etc/otel-collector-config.yaml"]
+    ports:
+      - 4317:4317
+      - 4318:4318
     networks:
       - api
       - monit
