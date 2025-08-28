@@ -28,3 +28,10 @@
 - `mvn clean package` realiza o empacotamento do projeto, criando o arquivo JAR ou WAR
 - `java -javaagent:opentelemetry/opentelemetry-javaagent.jar -Dotel.service.name=api-cursos -Dotel.traces.exporter=otlp -Dotel.metrics.exporter=none -Dotel.integration.jdbc.datasource.enabled=true -Dotel.instrumentation.jdbc.datasource.enabled=true -Dotel.exporter.otlp.endpoint=http://localhost:4318 -Dotel.exporter.otlp.protocol=http/protobuf -jar target/*.jar` rodando a aplicação com o agent do OpenTelemetry
   > Utilizar GitBash caso esteja no Windows.
+- `export SPRING_REDIS_HOST='localhost'` seta variável de ambiente para o host do Redis
+- `export SPRING_DATASOURCE_URL='jdbc:postgresql://localhost:5432/logsdb'` seta variável de ambiente para a URL do banco de dados
+  > Executar no diretório /jaeger-opentelemetry-tracking/src
+  > Utilizar GitBash caso esteja no Windows ou executar `set <variável>='<valor>'`
+  - `echo $<variável>` exibe o valor da variável
+  > Utilizar GitBash caso esteja no Windows ou executar `echo %<variável>='<valor>'%`
+  > Executar no diretório `mvn clean package` /src/logs
