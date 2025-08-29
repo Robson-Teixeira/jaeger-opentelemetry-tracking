@@ -158,3 +158,12 @@ services:
       - monit
     depends_on:
       - collector-api-cursos
+
+  client-api-cursos:
+    image: kdpsc/alura:client-api-cursos
+    container_name: client-api-cursos
+    restart: unless-stopped
+    networks:
+      - public
+    depends_on:
+      - jaeger-api-cursos
