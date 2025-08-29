@@ -5,6 +5,7 @@
 - [Jaeger](https://www.jaegertracing.io/)
 - [OpenTelemetry](https://opentelemetry.io/)
   - [Repositório](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
+  - [Instrument NGINX](https://opentelemetry.io/blog/2022/instrument-nginx/)
 
 ## Instalações
 - [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
