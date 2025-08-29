@@ -6,6 +6,8 @@
 - [OpenTelemetry](https://opentelemetry.io/)
   - [Repositório](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
   - [Instrument NGINX](https://opentelemetry.io/blog/2022/instrument-nginx/)
+- [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
+- [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
 
 ## Instalações
 - [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
